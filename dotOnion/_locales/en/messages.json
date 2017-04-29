@@ -5,7 +5,7 @@
    },
    "extName": {
       "description": "The extension name.",
-      "message": "dotOnion connector"
+      "message": "dotOnion"
    },
    "extShortname": {
       "description": "The short name.",
