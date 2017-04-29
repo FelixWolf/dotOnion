@@ -1,0 +1,73 @@
+{
+   "extDescription": {
+      "description": "The extension description.",
+      "message": "Forwards requests to .onion and .exit tlds to a tor proxy"
+   },
+   "extName": {
+      "description": "The extension name.",
+      "message": "dotOnion connector"
+   },
+   "extShortname": {
+      "description": "The short name.",
+      "message": "dotOnion"
+   },
+   
+   "save_settings": {
+      "description": "",
+      "message": "Save settings"
+   },
+   "test_connection": {
+      "description": "",
+      "message": "Test connection"
+   },
+   "not_configured":{
+      "description": "",
+      "message": "dotOnion IS NOT configured and will not work! Please see the \"Settings\" tab to configure!"
+   },
+   "word_warning": {
+      "description": "",
+      "message": "WARNING"
+   },
+   "word_info": {
+      "description": "",
+      "message": "Info"
+   },
+   "word_settings": {
+      "description": "",
+      "message": "Settings"
+   },
+   "word_about": {
+      "description": "",
+      "message": "About"
+   },
+   "word_port": {
+      "description": "",
+      "message": "Port"
+   },
+   "word_host": {
+      "description": "",
+      "message": "Host"
+   },
+   "useExternal": {
+      "description": "",
+      "message": "The Tor SOCKS server is running on \u003CI>this computer:\u003C/I>"
+   },
+   "useLocal": {
+      "description": "",
+      "message": "The Tor SOCKS server is running on \u003CI>a different computer:\u003C/I>"
+   },
+   
+   "about_top": {
+      "description": "",
+      "message": "dotOnion is a simple tor proxy handler, made for those who just want to access .onion domains, but do not need extra security/privacy."
+   },
+   "about_mid": {
+      "description": "",
+      "message": "\u003Cb>If you are using dotOnion for privacy, I highly recommend getting the \u003Ca href=\"https://www.torproject.org/projects/torbrowser.html.en\">Tor Browser\u003C/a> instead.\u003C/b> It is a lot more secure as it does other stuff to protect your privacy, dotOnion is only intended for letting you access tor sites, it doesn't add any security layers."
+   },
+   "about_crafted": {
+      "description": "",
+      "message": "dotOnion is hand crafted by Hyenas, with love! :3"
+   }
+   
+}

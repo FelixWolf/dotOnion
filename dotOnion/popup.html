@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Popup for tor .onion processor</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,700|Roboto+Mono:300" rel="stylesheet">
+        <link href="./res/style/popup.css" type="text/css" rel="stylesheet">
+        <script src="./res/js/popup.js"></script>
+    </head>
+    <body>
+        <div id="navigation" class="navigation">
+            <button data-menuOffset="0" data-i18n="word_info">Info</button>
+            <button data-menuOffset="1" data-i18n="word_settings">Settings</button>
+            <button data-menuOffset="2" data-i18n="word_about">About</button>
+        </div>
+        <div id="menus" class="menus">
+            <div class="menu">
+                <div id="needsConfigure" class="needsConfigure"><span data-i18n="word_warning" style="font-weight:700;">WARNING:</span><br/>
+                <span data-i18n="not_configured">dotOnion IS NOT configured and will not work! Please see the "Settings" tab to configure!</span></div>
+                <img src="./res/img/local.png"/> <span style="font-family:'roboto mono'">Real IP: </span><span id="ipPublic"></span><br/>
+                <img src="./res/img/icon16.png"/> <span style="font-family:'roboto mono'">Tor&nbsp; IP: </span><span id="ipTor"></span>
+            </div><div class="menu">
+                <input type="radio" name="proxyType" id="proxyTypeLocal" value="local"><label for="proxyTypeLocal" data-i18n="useLocal">Tor is running on <I>this computer:</I></label>
+                <div class="settings" id="settingsForLocal">
+                    <span style="font-family:'roboto mono'" data-i18n="word_port">Port</span>: <input type="number" min="1" max="65535" step="1" value="9050" id="settingTorPortLocal"/>
+                </div>
+                <input type="radio" name="proxyType" id="proxyTypeExternal" value="external"><label for="proxyTypeExternal" data-i18n="useExternal">Tor is running on <I>on a different computer:</I></label>
+                <div class="settings disabled" id="settingsForExternal">
+                    <span style="font-family:'roboto mono'" data-i18n="word_host">Host</span>: <input type="text" placeholder="IP Address" id="settingTorHostExternal"/><br/>
+                    <span style="font-family:'roboto mono'" data-i18n="word_port">Port</span>: <input type="number" min="1" max="65535" step="1" value="9050" id="settingTorPortExternal"/>
+                </div><br/>
+                <input type="checkbox" id="settingProxyEnableExit"/><label for="settingProxyEnableExit">Enable .exit domains</label><br/><br/>
+                <button id="settingsSave" data-i18n="save_settings" title="You don't have to click this, but it is satisfying. :3">Save Settings</button> <button data-i18n="test_connection" id="testConnection">Test connection</button>
+            </div><div class="menu">
+                <span data-i18n="about_top">dotOnion is a simple tor proxy handler, made for those who just want to access .onion domains, but do not need extra security/privacy.</span><br/>
+                <br/>
+                <span data-i18n="about_mid"><b>If you are using dotOnion for privacy, I highly recommend getting the <a href="https://www.torproject.org/projects/torbrowser.html.en">Tor Browser</a> instead.</b>
+                It is a lot more secure as it does other stuff to protect your privacy, dotOnion is only intended for letting you access tor sites, it doesn't add any security layers.</span><br/>
+                <br/>
+                <br/>
+                <span data-i18n="about_crafted">dotOnion is hand crafted by Hyenas, with love! :3</span>
+            </div>
+        </div>
+    </body>
+</html>

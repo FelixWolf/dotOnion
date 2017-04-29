@@ -1,0 +1,75 @@
+body,html{
+    font-family: 'Roboto', sans-serif;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    font-weight:300;
+    font-size:16px;
+    min-width:512px;
+    min-height:256px;
+}
+
+.needsConfigure{
+    display:none;
+    margin:4px 32px 4px 32px;
+    border:1px solid #f44242;
+    padding:8px;
+    background: #db6969;
+    border-radius:4px;
+    box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.75);
+}
+
+.navigation{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height:32px;
+    width:100%;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.75);
+}
+
+button{
+    border:0;
+    background:#eee;
+    transition: background-color 0.25s ease;
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.75);
+    outline: none;
+}
+button:hover{background:#ccc;}
+button:active{background:#888;}
+button.selected{background:#aaa;}
+
+.navigation button{
+    box-shadow: none;
+    font-size:20px;
+    flex: 1 0 auto;
+    font-weight:bold;
+}
+
+.menus{
+    width:100%;
+    height:calc(100% - 32px);
+    overflow:hidden;
+    white-space: nowrap;
+}
+
+.menu{
+    box-sizing: border-box; 
+    white-space: normal;
+    padding: 10px 8px 0 8px;
+    vertical-align: top;
+    display:inline-block;
+    height:100%;
+    width:100%;
+}
+
+
+.settings{
+    padding:4px;
+    border-radius:4px;
+    background:#ccc;
+}
+.settings.disabled{
+    background:#888;
+}
